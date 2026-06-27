@@ -70,7 +70,7 @@ nav button {
     font-weight: 700;
     font-size: 64px;
     line-height: 80px;
-    /* width: 40vw; */
+    width: 40vw;
 }
 
 .hero> :nth-child(2) {
@@ -157,11 +157,281 @@ nav button {
     fill: white;
 }
 
+/* Trending Now Section */
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+}
+
+.trending {
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    margin-top: 40px;
+}
+
+.trending h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.trending-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+.card span {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    font-size: 90px;
+    font-weight: 700;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+.reasons {
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    margin-top: 60px;
+}
+
+.reasons h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.reason-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.reason-card {
+    position: relative;
+    flex: 1;
+    min-width: 220px;
+    min-height: 280px;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    background: linear-gradient(135deg,
+            #1a2144,
+            #210d19);
+
+    overflow: hidden;
+}
+
+/* Heading inside card */
+.reason-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+/* Paragraph inside card */
+.reason-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Bottom icon */
+.reason-card .icon {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    font-size: 40px;
+}
+
+/* TV SVG */
+.reason-card img {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    width: 60px;
+}
+
+/* FAQ Section CSS */
+.faq {
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    margin-top: 60px;
+}
+
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* FAQ Boxes */
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #2d2d2d;
+
+    padding: 28px;
+
+    margin-bottom: 8px;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.faqbox:hover {
+    background-color: #414141;
+}
+
+/* Plus Sign */
+.faqbox span:last-child {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+/* Bottom Email Section */
+
+.bottom-email {
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.bottom-email input {
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 13px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgba(192, 181, 181, 0.7);
+    background-color: rgba(23, 23, 23, 0.7);
+    box-sizing: border-box;
+}
+
+/* Footer CSS */
+footer{
+    color: rgba(255,255,255,0.7);
+
+    max-width: 80vw;
+
+    margin: auto;
+
+    padding: 60px 0;
+}
+
+/* Questions */
+.questions{
+    margin-bottom: 30px;
+}
+
+.questions a{
+    color: rgba(255,255,255,0.7);
+}
+
+/* Footer Grid */
+.footer{
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+/* Footer Columns */
+.footer-item{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+/* Footer Links */
+.footer-item a{
+    color: rgba(255,255,255,0.7);
+
+    font-size: 14px;
+}
+
+/* Netflix India */
+.netflix-india{
+    margin-top: 30px;
+
+    font-size: 14px;
+}
+
+/* Captcha text */
+.captcha{
+    margin-top: 30px;
+
+    font-size: 13px;
+
+    color: rgba(255,255,255,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries ALWAYS LAST */
+
 @media screen and (max-width: 768px) {
-    
-    .hero-buttons {
-        flex-direction: column;
-        font-size: 5px;
+
+    .main {
+        height: 80vh;
+    }
+
+    .main .box {
+        height: 80vh;
     }
 
     /* Navbar */
@@ -182,14 +452,33 @@ nav button {
     .hero {
         padding: 20px;
         gap: 18px;
+        height: 60%;
     }
 
-    .hero-heading {
-        font-size: 48px;
-        line-height: 56px;
+    #hero-heading {
+        font-size: 2.3rem;
+        /* 48px */
+        line-height: 1.4;
+        /* max-width: 100%; */
+        width: 90vw;
     }
 
-        .lang-text {
+
+    .lang-text {
         display: none;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 90%;
+        align-items: center;
+    }
+
+    /* Get Started button */
+    .btn-red {
+        font-size: 1.2rem;
+        padding: 12px 20px;
     }
 }
