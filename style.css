@@ -296,11 +296,12 @@ h2 {
 
     background-color: #2d2d2d;
 
-    padding: 28px;
+    padding: 5px 25px;
 
     margin-bottom: 8px;
 
     font-size: 24px;
+    font-weight: 400;
 
     cursor: pointer;
 
@@ -381,32 +382,26 @@ footer{
 /* Footer Columns */
 .footer-item{
     display: flex;
-
     flex-direction: column;
-
     gap: 16px;
 }
 
 /* Footer Links */
 .footer-item a{
     color: rgba(255,255,255,0.7);
-
     font-size: 14px;
 }
 
 /* Netflix India */
 .netflix-india{
     margin-top: 30px;
-
     font-size: 14px;
 }
 
 /* Captcha text */
 .captcha{
     margin-top: 30px;
-
     font-size: 13px;
-
     color: rgba(255,255,255,0.5);
 }
 
