@@ -185,30 +185,32 @@ h2 {
 }
 
 /* slider buttons start  */
-.trending{
+.trending {
     max-width: 60vw;
     margin: auto;
     color: white;
     margin-top: 40px;
 
-    position: relative;}
+    position: relative;
+}
 
-.trending-container{
+.trending-container {
     display: flex;
     gap: 30px;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 20px 40px; /* Space for buttons */
+    padding: 20px 40px;
+    /* Space for buttons */
 
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
 
-.trending-container::-webkit-scrollbar{
+.trending-container::-webkit-scrollbar {
     display: none;
 }
 
-.slider-btn{
+.slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -219,7 +221,7 @@ h2 {
     border: none;
     border-radius: 8px;
 
-    background: rgba(60,60,60,.7);
+    background: rgba(60, 60, 60, .7);
     color: white;
 
     cursor: pointer;
@@ -227,13 +229,14 @@ h2 {
     z-index: 10;
 }
 
-.left{
+.left {
     left: 0;
 }
 
-.right{
+.right {
     right: 0;
 }
+
 /* slider buttons end  */
 
 .card {
@@ -313,7 +316,7 @@ h2 {
 }
 
 /* Bottom icon */
-.reason-card svg{
+.reason-card svg {
     position: absolute;
     bottom: 18px;
     right: 18px;
@@ -404,8 +407,8 @@ h2 {
 }
 
 /* Footer CSS */
-footer{
-    color: rgba(255,255,255,0.7);
+footer {
+    color: rgba(255, 255, 255, 0.7);
 
     max-width: 60vw;
 
@@ -415,20 +418,20 @@ footer{
 }
 
 /* Questions */
-.questions{
+.questions {
     margin-bottom: 30px;
 }
 
-.questions a{
-    color: rgba(255,255,255,0.7);
+.questions a {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* Footer Grid */
-.footer{
+.footer {
     display: grid;
 
     grid-template-columns:
-        repeat(4,1fr);
+        repeat(4, 1fr);
 
     gap: 20px;
 
@@ -436,29 +439,29 @@ footer{
 }
 
 /* Footer Columns */
-.footer-item{
+.footer-item {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
 /* Footer Links */
-.footer-item a{
-    color: rgba(255,255,255,0.7);
+.footer-item a {
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
 }
 
 /* Netflix India */
-.netflix-india{
+.netflix-india {
     margin-top: 30px;
     font-size: 14px;
 }
 
 /* Captcha text */
-.captcha{
+.captcha {
     margin-top: 30px;
     font-size: 13px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -503,15 +506,13 @@ footer{
     .hero {
         padding: 20px;
         gap: 18px;
-        height: 60%;
+        height: 80%;
     }
 
     #hero-heading {
-        font-size: 2.3rem;
-        /* 48px */
-        line-height: 1.4;
-        /* max-width: 100%; */
-        width: 90vw;
+        font-size: 2rem;
+        line-height: 1.2;
+        width: 80vw;
     }
 
 
@@ -533,19 +534,65 @@ footer{
         padding: 12px 20px;
     }
 
-    .trending{
+    .trending {
         max-width: 80vw;
     }
 
-    .reasons{
+    .trending h2 {
+        font-size: 18px;
+    }
+
+    .reasons {
         max-width: 80vw;
     }
 
-    .faq{
+    .reason-card{
+        padding: 30px 20px;
+    }
+
+    .reasons h2 {
+        font-size: 18px;
+    }
+
+    .reason-card h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .reason-card p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .reason-card svg {
+        min-height: 50px;
+    }
+
+    .faq {
+        max-width: 90vw;
+    }
+
+    .faq h2 {
+        font-size: 18px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .faqbox span:last-child {
+        font-size: 36px;
+    }
+
+    footer {
         max-width: 80vw;
     }
 
-    footer{
-        max-width: 80vw;
+    .footer{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:10px;
     }
+
 }
