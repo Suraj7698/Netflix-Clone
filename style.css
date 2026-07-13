@@ -17,12 +17,12 @@ body {
     background-repeat: no-repeat;
     background-size: max(2000px, 100vw);
     position: relative;
-    height: 105vh;
+    height: 100vh;
 
 }
 
 .main .box {
-    height: 105vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -87,7 +87,7 @@ nav button {
 
 .separation {
     height: 5px;
-    background-color: rgb(65, 64, 64);
+    background-color: rgb(49, 47, 48);
 }
 
 .btn {
@@ -165,7 +165,7 @@ h2 {
 }
 
 .trending {
-    max-width: 80vw;
+    max-width: 60vw;
     margin: auto;
     color: white;
     margin-top: 40px;
@@ -181,12 +181,66 @@ h2 {
     gap: 30px;
     overflow-x: auto;
     padding: 20px 0;
+    margin: 0 20px;
 }
+
+/* slider buttons start  */
+.trending{
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    margin-top: 40px;
+
+    position: relative;}
+
+.trending-container{
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 40px; /* Space for buttons */
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.trending-container::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 25px;
+    height: 120px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(60,60,60,.7);
+    color: white;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+/* slider buttons end  */
 
 .card {
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease;
+    overflow: visible;
 }
 
 .card:hover {
@@ -209,7 +263,7 @@ h2 {
 }
 
 .reasons {
-    max-width: 80vw;
+    max-width: 60vw;
     margin: auto;
     color: white;
     margin-top: 60px;
@@ -243,6 +297,7 @@ h2 {
     overflow: hidden;
 }
 
+
 /* Heading inside card */
 .reason-card h3 {
     font-size: 24px;
@@ -258,12 +313,13 @@ h2 {
 }
 
 /* Bottom icon */
-.reason-card .icon {
+.reason-card svg{
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    bottom: 18px;
+    right: 18px;
 
-    font-size: 40px;
+    width: 72px;
+    height: 72px;
 }
 
 /* TV SVG */
@@ -277,7 +333,7 @@ h2 {
 
 /* FAQ Section CSS */
 .faq {
-    max-width: 80vw;
+    max-width: 60vw;
     margin: auto;
     color: white;
     margin-top: 60px;
@@ -351,7 +407,7 @@ h2 {
 footer{
     color: rgba(255,255,255,0.7);
 
-    max-width: 80vw;
+    max-width: 60vw;
 
     margin: auto;
 
@@ -475,5 +531,21 @@ footer{
     .btn-red {
         font-size: 1.2rem;
         padding: 12px 20px;
+    }
+
+    .trending{
+        max-width: 80vw;
+    }
+
+    .reasons{
+        max-width: 80vw;
+    }
+
+    .faq{
+        max-width: 80vw;
+    }
+
+    footer{
+        max-width: 80vw;
     }
 }
